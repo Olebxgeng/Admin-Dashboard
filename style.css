@@ -364,3 +364,79 @@ main .recent-orders{
     display: block;
     margin: 1rem auto;
 }
+
+/*--------------RIGHT---------------*/
+
+.right{
+    margin-top: 1.4rem;
+}
+
+.right .top{
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.menu-btn button{
+    display: none;
+}
+
+.theme-toggle{
+    background: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+
+.theme-toggle span{
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle span .active{
+    background: var(--color-primary);
+    color: white;
+    border-radius: var(--border-radius-1);
+}
+
+.profile{
+    display: flex;
+    gap: 2rem;
+    text-align: right;
+}
+
+.recent-updates{
+    margin-top: 1rem;
+}
+
+.recent-updates h2{
+    margin-bottom: 0.8rem;
+}
+
+.updates{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300mx ease;
+}
+
+.updates:hover{
+    box-shadow: none;
+}
+
+.updates .update{
+    display: grid;
+    grid-template-columns: 2.6rem auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
