@@ -39,18 +39,19 @@
 }
 
 html{
-    width: 100vw;
+    width: 98vw;
     height: 100vh;
     font-size: 0.88rem;
     font-family: 'Poppins', sans-serif;
     background-color: var(--color-background);
     user-select: none;
-    overflow: hidden;
+    margin: 0 auto;
 }
 
 .container{
     display: grid;
     width: 96%;
+    height: 100%;
     margin: 0 auto;
     gap: 1.8rem;
     grid-template-columns: 14rem auto 23rem;
@@ -135,7 +136,7 @@ aside .logo img{
     height: 2rem;
 }
 
-aside close{
+aside .close{
     display: none;
 }
 
@@ -144,7 +145,7 @@ aside close{
 aside .sidebar{
     display: flex;
     flex-direction: column;
-    height: 86vh;
+    height: 95vh;
     position: relative;
     top: 3rem;
 }
@@ -171,7 +172,7 @@ aside .sidebar a span{
 
 aside .sidebar a:last-child{
     position: absolute;
-    bottom: 2rem;
+    bottom: 1rem;
     width: 100%;
 }
 
@@ -377,7 +378,7 @@ main .recent-orders{
     gap: 2rem;
 }
 
-.menu-btn button{
+#menu-btn{
     display: none;
 }
 
@@ -401,7 +402,7 @@ main .recent-orders{
     justify-content: center;
 }
 
-.theme-toggle span .active{
+.theme-toggle .active{
     background: var(--color-primary);
     color: white;
     border-radius: var(--border-radius-1);
@@ -411,6 +412,12 @@ main .recent-orders{
     display: flex;
     gap: 2rem;
     text-align: right;
+}
+
+.profile-photo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 .recent-updates{
@@ -436,7 +443,73 @@ main .recent-orders{
 .updates .update{
     display: grid;
     grid-template-columns: 2.6rem auto;
-    gap: 1rem;
+    gap: 2rem;
     margin-bottom: 1rem;
 }
 
+/*--------------SALES ANALYTICS---------------*/
+
+.sales-analytics{
+    margin-top: 1.8rem;
+}
+
+.sales-analytics h2{
+    margin-bottom: 0.8rem;
+}
+
+.sales-analytics .item{
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.sales-analytics .item:hover{
+    box-shadow: none;
+}
+
+.sales-analytics .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 0;
+    width: 100%;
+}
+
+.sales-analytics .right .icon{
+    padding: 0.6rem;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+}
+
+.sales-analytics .right .offline .icon{
+    background: var(--color-red);
+}
+
+.sales-analytics .right .cutomers .icon{
+    background: var(--color-success);
+}
+
+.sales-analytics .add-products{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 2px dashed var(--color-primary);
+    color: var(--color-primary);
+    background: transparent;
+}
+
+.sales-analytics .add-products .add-product{
+    display: flex;
+    margin: 0 auto;
+}
+.sales-analytics .add-products .add-product h3{
+    margin-top:3px;
+}
